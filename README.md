@@ -20,7 +20,7 @@
     });
 ```
 
-or if you don't want to use lambdas:
+or, if you don't want to use lambdas:
     
 ```java    
     googleAccountPicker.pickAccount(new OnAccountPickedListener() {
