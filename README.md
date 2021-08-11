@@ -1,7 +1,7 @@
 # Easy-Google-Account-Picker
 
 
- ###USAGE
+ ### USAGE
 
  1. Constructor must be invoked in OnCreate() method of activity
     otherwise you'll get exception like
