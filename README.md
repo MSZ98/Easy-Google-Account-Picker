@@ -3,8 +3,7 @@
 
  ### USAGE
 
- 1. Constructor must be invoked in OnCreate() method of activity
-    otherwise you'll get exception like
+ 1. Constructor must be invoked in OnCreate() method of activity, otherwise you'll get exception like
 ```java.lang.IllegalStateException: LifecycleOwner is attempting to register while current state is RESUMED.```
     It should look like this:
 
