@@ -8,7 +8,7 @@
     java.lang.IllegalStateException: LifecycleOwner is attempting to register while current state is RESUMED.
     It should look like this:
 
-    GoogleAccountPicker googleAccountPicker = new GoogleAccountPicker(this);
+    <code>GoogleAccountPicker googleAccountPicker = new GoogleAccountPicker(this);</code>
 
  2. Use pickAccount() method anywhere to pick an account. It doesn't return anything. You have to
     do it like this:
