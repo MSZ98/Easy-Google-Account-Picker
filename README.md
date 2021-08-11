@@ -12,15 +12,17 @@
     GoogleAccountPicker googleAccountPicker = new GoogleAccountPicker(this);
 ```
 
- 2. Use pickAccount() method anywhere to pick an account. It doesn't return anything. You have to
-    do it like this:
+ 2. Use pickAccount() method anywhere to pick an account. It doesn't return anything, because choosing an account is non blocking operation.
+    You have to do it like this:
 
 ```java
     googleAccountPicker.pickAccount(account -> {
         System.out.println(account.getName());
     });
 ```
-    or
+
+   or if you don't want to use lambdas:
+    
 ```java    
     googleAccountPicker.pickAccount(new OnAccountPickedListener() {
           public void onAccountPicked(Account account) {
@@ -28,6 +30,7 @@
           }
     });
 ```
+
  3. You can also use getAccounts() method to get all available accounts without showing up dialog.
     It's useful when your app remembers once chosen account.
 
