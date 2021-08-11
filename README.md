@@ -1,27 +1,27 @@
 # Easy-Google-Account-Picker
 
-<pre>
- <b>USAGE</b>
+
+ ###USAGE
 
  1. Constructor must be invoked in OnCreate() method of activity
     otherwise you'll get exception like
     java.lang.IllegalStateException: LifecycleOwner is attempting to register while current state is RESUMED.
     It should look like this:
 
-``` java
+```java
     GoogleAccountPicker googleAccountPicker = new GoogleAccountPicker(this);
 ```
 
  2. Use pickAccount() method anywhere to pick an account. It doesn't return anything. You have to
     do it like this:
 
-``` java
+```java
     googleAccountPicker.pickAccount(account -> {
         System.out.println(account.getName());
     });
 ```
     or
-``` java    
+```java    
     googleAccountPicker.pickAccount(new OnAccountPickedListener() {
           public void onAccountPicked(Account account) {
               System.out.println(account.getName());
@@ -33,12 +33,12 @@
 
 
  Remember to set up permission in manifest:
- ``` xml
+ ```xml
       <b>&lt;uses-permission android:name="android.permission.GET_ACCOUNTS"/&gt;</b>
  ```
 
  and add dependency to build.gradle:
- ``` gradle
+ ```gradle
       <b>implementation 'com.google.android.gms:play-services-base:17.6.0'</b>
  ```
- </pre>
+
