@@ -32,7 +32,8 @@ import java.util.Arrays;
  *        System.out.println(account.getName());
  *    });
  *
- *    or
+ *    or, if you don't want to use lambdas:
+ *
  *    googleAccountPicker.pickAccount(new OnAccountPickedListener() {
  *          public void onAccountPicked(Account account) {
  *              System.out.println(account.getName());
@@ -48,7 +49,7 @@ import java.util.Arrays;
  *      &lt;uses-permission android:name="android.permission.GET_ACCOUNTS"/&gt;
  *
  *
- * and add implementation to build.gradle:
+ * and add depencency to build.gradle:
  *
  *      implementation 'com.google.android.gms:play-services-base:17.6.0'
  *
