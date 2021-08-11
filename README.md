@@ -3,10 +3,10 @@
 <pre>
  <b>USAGE</b>
 
- <p color="gray" 1. Constructor must be invoked in OnCreate() method of activity
+ 1. Constructor must be invoked in OnCreate() method of activity
     otherwise you'll get exception like
     java.lang.IllegalStateException: LifecycleOwner is attempting to register while current state is RESUMED.
-    It should look like this:/>
+    It should look like this:
 
     <b>GoogleAccountPicker googleAccountPicker = new GoogleAccountPicker(this);</b>
 
